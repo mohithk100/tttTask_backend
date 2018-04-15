@@ -17,6 +17,6 @@ app.use((req, res, next) => {
 app.use(routes);
 
 //listening for requests on port 8000
-app.listen(8000, () => {
+app.listen(5000, () => {
 	console.log('Terribly Tiny Tales listening on port 8000!');
 });
