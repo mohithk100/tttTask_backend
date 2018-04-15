@@ -1,6 +1,8 @@
 const express = require('express');
 const routes = require('./routes/api');
 
+const PORT = process.env.PORT || 5000;
+
 
 //setting up express app
 const app = express();
@@ -17,6 +19,6 @@ app.use((req, res, next) => {
 app.use(routes);
 
 //listening for requests on port 8000
-app.listen(5000, () => {
-	console.log('Terribly Tiny Tales listening on port 8000!');
+app.listen(PORT, () => {
+	console.log(`Terribly Tiny Tales listening on ${PORT}`);
 });
